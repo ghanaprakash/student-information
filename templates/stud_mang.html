@@ -10,15 +10,51 @@
 <body>
     <div class="container">
         <div class="row text-center" ><h1>Student Management System</h1>
-            <div class="col-lg-3 border">
-                <h4>registration</h4><br>
-                <input type="text">
+            <div class="col-lg-3 border mt-5" >
+                <form action="">
+                <h4 class="mt-3">registration</h4><br>
+                <input type="text" class="form-control" placeholder="enter your name"><br>
+                <input type="" class="form-control"max="100" min="0" type="number " placeholder="enter your age"><br>
+                <select class="form-select" aria-label="Default select example">
+                    
+                    <option value="python">python</option>
+                    <option value="tally">Tally</option>
+                    <option value="java">java</option>
+                  </select><br>
+                  <input type="text" class="form-control" placeholder="enter course duration"><br>
+                <button class="btn btn-secondary mb-5" >Submit</button><br>
+            </form>
 
             </div>
-            <div class="col"> </div>
+            <div class="col mt-5 ms-3">
+                <table class="table table-success table-striped">
+                    
+                        <tr>
+                            <th>name</th>
+                            <th>age</th>
+                            <th>course</th>
+                            <th>duration</th>
+                            <th>action</th>
+                        </tr>
+                    
+                    
+                        <tr>
+                            <td>prakash</td>
+                            <td>25</td>
+                            <td>python</td>
+                            <td>3 months</td>
+                            <td>
+                                <a href="" class="btn btn-warning"><i class="fa-regular fa-pen-to-square"></i></i></a>
+                                <a href="" class="btn btn-danger"><i class="fa-regular fa-trash-can"></i></a>
+                            </td>
+                        </tr>
+                    
+                  </table>    
+            </div>
         </div>
 
     </div>
+    <script src="https://kit.fontawesome.com/cef3749068.js" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
