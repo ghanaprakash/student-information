@@ -11,18 +11,18 @@
     <div class="container">
         <div class="row text-center" ><h1>Student Management System</h1>
             <div class="col-lg-3 border mt-5" >
-                <form action="">
+                <form action="/" method="post">
                 <h4 class="mt-3">registration</h4><br>
-                <input type="text" class="form-control" placeholder="enter your name" name="name"><br>
-                <input type="" class="form-control"max="100" min="0" type="number " placeholder="enter your age"><br>
-                <textarea name="" class="form-control" placeholder="enter your address" id="" name="address"></textarea><br>
-                <select class="form-select" aria-label="Default select example">
+                <input type="text" class="form-control" placeholder="enter your name" name="username"><br>
+                <input type="number" class="form-control"max="100" min="0" type="number " placeholder="enter your age" name="age"><br>
+                <textarea class="form-control" placeholder="enter your address" id="" name="address"></textarea><br>
+                <select class="form-select" aria-label="Default select example" name="course">
                     
                     <option value="python">python</option>
                     <option value="tally">Tally</option>
                     <option value="java">java</option>
                   </select><br>
-                  <input type="text" class="form-control" placeholder="enter course duration"><br>
+                  <input type="text" class="form-control" placeholder="enter course duration" name="duration"><br>
                 <button type="sumbit" class="btn btn-secondary mb-5" >Submit</button><br>
             </form>
 
