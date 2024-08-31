@@ -31,24 +31,31 @@
                 <table class="table table-success table-striped">
                     
                         <tr>
+                            <th>sno</th>
                             <th>name</th>
                             <th>age</th>
+                            <th>address</th>
                             <th>course</th>
                             <th>duration</th>
                             <th>action</th>
                         </tr>
+                        (%if stud in studend%)
                     
                     
                         <tr>
-                            <td>prakash</td>
-                            <td>25</td>
-                            <td>python</td>
-                            <td>3 months</td>
-                            <td>
+                            <td>{{request.sno}}</td>
+                            <td>{{request.name}}</td>
+                            <td>{{request.age}}</td>
+                            <td>{{request.address}}</td>
+                            <td>{{request.course}}</td>
+                            <td>{{request.duration}}</td>
+                            <td>{{request.action}}</td>
+                            
                                 <a href="" class="btn btn-warning"><i class="fa-regular fa-pen-to-square"></i></i></a>
                                 <a href="" class="btn btn-danger"><i class="fa-regular fa-trash-can"></i></a>
                             </td>
                         </tr>
+                        (%endif%)
                     
                   </table>    
             </div>
