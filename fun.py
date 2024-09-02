@@ -18,4 +18,4 @@ def update():
     pass
 
 def delete():
-    pass
+    json_rread()
