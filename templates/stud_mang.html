@@ -39,23 +39,23 @@
                             <th>duration</th>
                             <th>action</th>
                         </tr>
-                        (%if stud in studend%)
+                        {%for stud in student%}
                     
                     
                         <tr>
-                            <td>{{request.sno}}</td>
-                            <td>{{request.name}}</td>
-                            <td>{{request.age}}</td>
-                            <td>{{request.address}}</td>
-                            <td>{{request.course}}</td>
-                            <td>{{request.duration}}</td>
-                            <td>{{request.action}}</td>
+                            <td>{{stud.sno}}</td>
+                            <td>{{stud.name}}</td>
+                            <td>{{stud.age}}</td>
+                            <td>{{stud.address}}</td>
+                            <td>{{stud.course}}</td>
+                            <td>{{stud.duration}}</td>
+                            <td>
                             
                                 <a href="" class="btn btn-warning"><i class="fa-regular fa-pen-to-square"></i></i></a>
                                 <a href="" class="btn btn-danger"><i class="fa-regular fa-trash-can"></i></a>
                             </td>
                         </tr>
-                        (%endif%)
+                        {%endfor%}
                     
                   </table>    
             </div>
@@ -64,5 +64,10 @@
     </div>
     <script src="https://kit.fontawesome.com/cef3749068.js" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        if(window.history.replaceState) {
+            window.history.replaceState(null,null,window.location.href);
+        }
+    </script>
 </body>
 </html>

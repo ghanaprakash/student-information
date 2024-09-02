@@ -1,4 +1,36 @@
 {
    "student": [
+      {
+         "sno": 1,
+         "name": "prakash",
+         "age": "26",
+         "address": "kovai",
+         "course": "python",
+         "duration": ""
+      },
+      {
+         "sno": 2,
+         "name": "aathish",
+         "age": "22",
+         "address": "thoothukudi",
+         "course": "tally",
+         "duration": "6 months"
+      },
+      {
+         "sno": 3,
+         "name": "aathish",
+         "age": "22",
+         "address": "thoothukudi",
+         "course": "tally",
+         "duration": "6 months"
+      },
+      {
+         "sno": 4,
+         "name": "karan",
+         "age": "32",
+         "address": "kovai\r\n",
+         "course": "python",
+         "duration": "2 months"
+      }
    ]
 }
