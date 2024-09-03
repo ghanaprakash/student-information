@@ -17,14 +17,14 @@ def registration(name,age, address,course,duration):
 def update():
     pass
 
-def delete():
-    json_read()
+def delete(id):
+    data=json_read()
     for stud in data["student"]:
-        if {{stud.sno}}==id:
-            data["student"].removel(stud)
+        if str(stud["sno"])==id:
+            data["student"].remove(stud)
             break
-
     i=1
-    for stud in data["studend"]:
+    for stud in data["student"]:
         stud["sno"]=i
         i+=1    
+    json_write(data)

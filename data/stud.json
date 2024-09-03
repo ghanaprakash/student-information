@@ -18,14 +18,6 @@
       },
       {
          "sno": 3,
-         "name": "aathish",
-         "age": "22",
-         "address": "thoothukudi",
-         "course": "tally",
-         "duration": "6 months"
-      },
-      {
-         "sno": 4,
          "name": "karan",
          "age": "32",
          "address": "kovai\r\n",
