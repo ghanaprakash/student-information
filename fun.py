@@ -18,4 +18,13 @@ def update():
     pass
 
 def delete():
-    json_rread()
+    json_read()
+    for stud in data["student"]:
+        if {{stud.sno}}==id:
+            data["student"].removel(stud)
+            break
+
+    i=1
+    for stud in data["studend"]:
+        stud["sno"]=i
+        i+=1    
