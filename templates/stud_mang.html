@@ -50,8 +50,46 @@
                             <td>{{stud.course}}</td>
                             <td>{{stud.duration}}</td>
                             <td>
+                                <!-- Button trigger modal -->
+                                    <button type="button" class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#staticBackdrop{{stud.sno}}">
+                                        <i class="fa-regular fa-pen-to-square"></i> 
+                                         </button>
+                                <!-- Modal -->
+                                <div class="modal fade" id="staticBackdrop{{stud.sno}}" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                                    <div class="modal-dialog">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                        <h1 class="modal-title fs-5" id="staticBackdropLabel">Modal title</h1>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <form action="/" method="post">
+                                                <h4 class="mt-3">registration</h4><br>
+                                                <input type="text" value="{{stud.name}}" class="form-control" placeholder="enter your name" name="username"><br>
+                                                <input type="number" value="{{stud.age}}" class="form-control"max="100" min="0" type="number " placeholder="enter your age" name="age"><br>
+                                                <textarea class="form-control" placeholder="enter your address" id="" name="address">{{stud.address}}</textarea><br>
+                                                <select class="form-select" aria-label="Default select example" name="course">
+                                                    
+                                                    <option value="python">python</option>
+                                                    <option value="tally">Tally</option>
+                                                    <option value="java">java</option>
+                                                  </select><br>
+                                                  <input type="text" class="form-control" placeholder="enter course duration" name="duration" value="{{stud.duration}}"><br>
+                                                
+                                            
+                                
+                                        </div>
+                                        <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                        <button type="submit" class="btn btn-primary">Update</button>
+                                        </div></form>
+                                    </div>
+                                    </div>
+                                </div>
+                
+        
                             
-                                <a href="" class="btn btn-warning"><i class="fa-regular fa-pen-to-square"></i></i></a>
+                            
                                 <a href="/delete/{{stud.sno}}" class="btn btn-danger"><i class="fa-regular fa-trash-can"></i></a>
                             </td>
                         </tr>
