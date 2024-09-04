@@ -14,6 +14,11 @@ def index():
 def delete_stud(id):
      delete(id)
      return redirect("/")
+ 
+@app.route("/update/<id>" ,methods=["GET","POST"])
+def update_stud(id):
+     update(id,request.form["username"],request.form["age"],request.form["address"],request.form["course"],request.form["duration"])
+     return redirect("/")
 
 if __name__=="__main__":
     app.run(debug=True,host="0.0.0.0")

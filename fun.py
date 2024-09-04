@@ -14,8 +14,18 @@ def registration(name,age, address,course,duration):
     json_write(data)
 
 
-def update():
-    pass
+def update(id,name,age ,address,course,duration):
+    data=json_read()
+    for stud in data["student"]:
+        if str(stud["sno"])==id:
+            stud["name"]=name
+            stud["age"]=age
+            stud["address"]=address
+            stud["course"]=course
+            stud["duration"]=duration
+            break
+    json_write(data)    
+            
 
 def delete(id):
     data=json_read()
